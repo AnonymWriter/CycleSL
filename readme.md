@@ -6,7 +6,7 @@
 This repository is anonymized for review.
 
 ## 🖼️ Teaser
-<img src="https://github.com/AnonymWriter/CycleSL/assets/168912462/92a771ba-c3a7-4cae-a9ff-a9df1f9eb906" width="700">
+<img src="https://github.com/AnonymWriter/CycleSL/assets/168912462/4452d123-7c27-4226-87f7-bf30b87dbb9b" width="700">
 
 ## 🗼 Pipeline
 After receiving smashed data from clients, CycleSL first forms a global dataset on the server side using the client features following a feature-as-sample strategy. Then CycleSL re-samples mini-batches from the dataset and feeds them into the server part model to train the model. Only after the server part model is updated, the original feature batches are re-used to compute gradients using the latest server side model. In the next the gradients are sent back to clients for client part model update.
