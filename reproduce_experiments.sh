@@ -42,8 +42,6 @@ do
     done
 done
 
-device=0
-
 # ablation study: server epoch
 for cda in -1.0 1.0 0.5 0.1
 do

@@ -27,7 +27,7 @@ Important libraries and their versions by **December 18th, 2024**:
 | --- | ----------- |
 | Python | 3.12.7 by Anaconda|
 | PyTorch | 2.5.1 for CUDA 12.4 |
-| Scikit-Learn | 1.5.1 |
+| Scikit-Learn | 1.6.0 |
 | WandB | 0.19.1 |
 
 Others:
