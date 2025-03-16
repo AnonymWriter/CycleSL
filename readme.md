@@ -1,12 +1,11 @@
 # CycleSL
 
 > **CycleSL: Server-Client Cyclical Update Driven Scalable Split Learning**.
+
 > CycleSL is a novel scalable split learning paradigm that can be integrated into existing scalable split learning methods such as PSL and SFL to improve convergence rate and quality while burdening the server even less and providing the same privacy guarantee.
 
-This repository is anonymized for review.
-
 ## 🖼️ Teaser
-<img src="https://github.com/user-attachments/assets/1b508472-2e4a-4804-be8e-d68cada34664" width="700">
+![](./teaser.png)
 
 ## 🗼 Pipeline
 After receiving smashed data from clients, CycleSL first forms a global dataset on the server side using the client features following a feature-as-sample strategy. Then CycleSL re-samples mini-batches from the dataset and feeds them into the server part model to train the model. Only after the server part model is updated, the original feature batches are re-used to compute gradients using the latest server side model. In the next the gradients are sent back to clients for client part model update.
@@ -16,7 +15,7 @@ After receiving smashed data from clients, CycleSL first forms a global dataset 
 
 2. Create conda environment with `conda env create -f environment.yml` and then activate the environment with `conda activate cyclesl`.
 
-3. Run `reproduce_experiments.sh` to reproduce our experiments.
+3. Run `experiments.sh` to reproduce our experiments.
 
 For detailed argument and hyperparameter settings please check `utils.py`. 
 
